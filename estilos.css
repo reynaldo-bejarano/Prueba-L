@@ -1,0 +1,275 @@
+/* ------------- Generales ---------------*/
+
+:root {
+    --azul: #013a76;
+    --amarillo: #ffbf00;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --fondo: #f9f9f9;
+    --footer: #a6a6a6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fondo);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ------------- Tipografia ---------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--blanco);
+    font-size: 35px;
+}
+
+
+/* ------------- Utilidades ---------------*/
+
+.titulo {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container-1 {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:768px) {
+    .container-1 {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+/* ---------------- Header---------------*/
+
+.bg-color {
+    background-color: var(--azul);
+}
+
+.barra {
+    padding: 5px 0;
+}
+
+div .logo {
+    float: left;
+    width: 33%;
+}
+
+div .header_iconos {
+    width: 67%;
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+}
+
+div .header_iconos svg {
+    margin-right: 20px;
+}
+
+
+/* ---------------- Start your search---------------*/
+
+div .container-2 {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+div .container-2 p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--blanco);
+}
+
+
+/* ---------------- Input Titulo---------------*/
+
+div .input-titulo {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+div .btn {
+    background-color: var(--azul);
+    border: 2px solid var(--amarillo);
+    color: var(--amarillo);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+div .btn:hover {
+    background-color: var(--amarillo);
+    color: var(--azul);
+}
+
+div.input-titulo p {
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+
+/* ---------------- Input ---------------*/
+
+.input {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.input-text {
+    width: 85%;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.input-btn {
+    background-color: var(--amarillo);
+    width: 14%;
+    padding: 20px 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* ---------------- Input Base ---------------*/
+
+div .input-base {
+    display: flex;
+    float: right;
+    padding-bottom: 10px;
+}
+
+div .input-base svg {
+    margin-right: 10px;
+}
+
+div .input-base p {
+    color: var(--blanco);
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+
+/* ---------------- Seccion 1---------------*/
+
+.seccion-1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--azul);
+}
+
+.seccion-1 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.seccion-1 p {
+    font-size: 18px;
+}
+
+
+/* ---------------- Seccion 1 Grid ---------------*/
+
+.seccion-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    margin-bottom: 50px;
+}
+
+.icono-grid {
+    width: 80px;
+    height: 80px;
+    background-color: var(--azul);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.texto-grid h5 {
+    margin-bottom: 10px;
+    color: var(--azul);
+    margin-top: 30px;
+}
+
+
+/*---------------------footer-----------------*/
+
+footer {
+    background-color: var(--blanco);
+    padding: 20px;
+}
+
+.footer {
+    font-size: 12px;
+    display: flex;
+    color: var(--footer);
+    background-color: var(--blanco);
+}
+
+.footer-enlaces {
+    display: flex;
+}
+
+.footer-enlaces a {
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.footer-enlaces a:hover {
+    color: var(--amarillo);
+}
+
+.footer-enlaces span {
+    background-color: var(--azul);
+    width: 2px;
+    height: 12px;
+}
